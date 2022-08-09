@@ -1,0 +1,151 @@
+@keyframes move {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .box {
+        position: relative;
+        margin: 50px 0;
+        left: 26%;
+        box-shadow: 20px 15px 125px 20px #f3f0f071;
+        background-image: url("./image/008754758e430bc0d2d04ef06a247efa.jpeg");
+        background-size: 100% 20%;
+        border-radius: 8px;
+        .month {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-image: url("./image/Snipaste_2021-12-15_20-04-34.png");
+            background-size: 100px 100px;
+        }
+        .h{
+            position: absolute;
+            right: 20%;
+            top: 10%;
+            width: 200px;
+            height: 30px;
+            font-size: 35px;
+        }
+
+       #bo {
+           position: absolute;
+           top: 130px;
+           left: 120px;
+           width: 300px;
+           height: 20px;
+           display: none;
+       }
+
+        .son {
+            position: absolute;
+            bottom: 0;
+            background-color: rgb(209, 34, 34);
+
+            .music {
+
+                div {
+                    box-sizing: border-box;
+                    border: 1px solid black;
+                    float: left;
+                    width: 50%;
+                    height: 100%;
+                    line-height: 70px;
+                    text-align: center;
+                    font-size: 30px;
+                }
+                #li{
+                    background-color: blue;
+                    color: #fff;
+                }
+                #my{
+                    background-color: #2272fb;
+                }
+            }
+
+            .musiclist {
+                background-color: rgb(138, 135, 135);
+                overflow: scroll;
+                overflow-x: hidden;
+            }
+
+            .favorite {
+                display: none;
+            }
+
+        }
+         .foot {
+             position: absolute;
+             bottom: 0;
+             line-height: 30px;
+             background-color: #2272fb;
+
+             span:nth-child(2) {
+                 float: right;
+                 margin-right: 20px;
+             }
+         }
+    }
+
+    li {
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        list-style-type: none;
+        border: 1px solid black;
+        background-color: #fff;
+
+        span {
+            display: inline-block;
+            text-align: left;
+        }
+
+        span:nth-child(1) {
+            margin-left: 10px;
+            width: 150px;
+            height: 100%;
+
+        }
+
+        span:nth-child(2) {
+            margin-left: 100px;
+            width: 100px;
+            height: 100%;
+        }
+
+        span:nth-child(3) {
+            float: right;
+            width: 48px;
+            height: 48px;
+            background-image: url('./image/Snipaste_2021-12-12_12-11-58.png');
+            background-size: 50px 50px;
+        }
+
+        // .span1 {
+        //     float: right;
+        //     width: 48px;
+        //     height: 48px;
+        //     background-image: url('./image/Snipaste_2021-12-12_12-19-23.png');
+        //     background-size: 50px 50px;
+        // }
+    }
+
+    li:hover {
+        transform: scale(1.05, 1.05);
+    }
+
+}
